@@ -6,14 +6,20 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Calender</title>
     <style>
+        h2 {
+            text-align: center;
+        }
+
         .container {
             display: grid;
             grid-template-columns: repeat(7, 1fr);
+            grid-template-rows: 30px repeat(6, 50px);
             row-gap: 20px;
             column-gap: 10px;
         }
 
-        .date {
+        .date,
+        .day {
             background-color: cadetblue;
             display: flex;
             justify-content: center;
@@ -21,13 +27,25 @@
             font-size: 1.5em;
             font-weight: 600;
             border-radius: 5px;
-            height: 4em;
+        }
+
+        .day {
+            font-size: 1em;
+            background-color: rgb(158, 157, 157);
         }
     </style>
 </head>
 
 <body>
+    <h2>My Personal Calender</h2>
     <div class="container">
+        <div class="day">S</div>
+        <div class="day">M</div>
+        <div class="day">T</div>
+        <div class="day">W</div>
+        <div class="day">T</div>
+        <div class="day">F</div>
+        <div class="day">S</div>
         <div class="date">29</div>
         <div class="date">30</div>
         <div class="date">31</div>
