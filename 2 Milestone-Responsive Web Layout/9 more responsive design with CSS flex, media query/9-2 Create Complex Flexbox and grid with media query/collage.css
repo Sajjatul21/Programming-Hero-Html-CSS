@@ -18,3 +18,8 @@ img {
 .vertical-img img {
     height: 50%;
 }
+
+.square-collage {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
