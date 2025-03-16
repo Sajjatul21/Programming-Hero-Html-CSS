@@ -7,7 +7,11 @@
     <title>Grid Layout</title>
     <style>
         .container {
-            display: flex;
+            display: grid;
+            /* grid-template-columns: 200px; */
+            /* grid-template-columns: 200px 200px; */
+            /* grid-template-columns: 200px 200px 200px; */
+            grid-template-columns: 200px 200px 200px 200px 200px;
         }
 
         .item {
@@ -19,6 +23,7 @@
 <body>
     <!-- flex unidirectional: go to one way -->
 
+    <!-- Flexbox and CSS Grid are both powerful CSS layout modules, but they address different layout needs: Flexbox is for one-dimensional layouts (rows or columns), while Grid is for two-dimensional layouts (rows and columns simultaneously).  -->
     <h1>Explore Grid Layout</h1>
     <div class="container">
         <div class="item">Item-1</div>
