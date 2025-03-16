@@ -8,6 +8,11 @@ img {
     display: flex;
     gap: 5px;
     margin-bottom: 5px;
+
+}
+
+.row>div {
+    flex: 1;
 }
 
 .vertical-img img {
