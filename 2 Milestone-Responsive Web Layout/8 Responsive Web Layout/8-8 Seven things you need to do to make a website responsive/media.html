@@ -11,6 +11,30 @@
             max-width: 1440px;
             margin: 0 auto;
         }
+
+        .image-container {
+            display: flex;
+        }
+
+        .image-container div {
+            width: 50%;
+        }
+
+        .image-container img {
+            width: 100%;
+        }
+
+        @media screen and (max-width: 576px) {
+            .image-container {
+                /* flex-direction: column; */
+                flex-direction: column-reverse;
+            }
+
+            .image-container div {
+                width: 100%;
+            }
+
+        }
     </style>
 
 </head>
@@ -22,14 +46,21 @@
             <li>viewport meta tag</li>
             <li>css relative unit</li> <!--  like rem, em, 100% -->
             <li>body max width and horizontal center align</li>
-            <li></li>
+            <li>image fluid</li>
             <li></li>
             <li></li>
             <li></li>
         </ol>
     </header>
     <main>
-        <img src="images/food.jpg" alt="">
+        <div class="image-container">
+            <div>
+                <img src="images/food.jpg" alt="">
+            </div>
+            <div>
+                <img src="images/tigar.jpg" alt="">
+            </div>
+        </div>
     </main>
 </body>
 
