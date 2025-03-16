@@ -1,0 +1,75 @@
+এগুলো CSS-এ ব্যবহৃত length units, যা বিভিন্ন উপায়ে elements-এর সাইজ নির্ধারণ করতে ব্যবহৃত হয়।  
+
+### 1️⃣ `em` (Relative to Parent Font Size)
+🔹 ১ `em` = parent element-এর font size-এর সমান।  
+🔹 যদি `parent`-এর font-size 20px হয়, তাহলে `2em` হবে 40px।  
+
+🔹 Example:  
+```css
+.parent {
+    font-size: 20px;
+}
+
+.child {
+    font-size: 2em; /* 2 × 20px = 40px */
+}
+```
+
+ 2️⃣ `rem` (Relative to Root Font Size)
+🔹 ১ `rem` = root element (`html`) এর font size-এর সমান।  
+🔹 Defaultভাবে browser-এর `html` font-size **16px** হয়।  
+
+🔹 Example:  
+```css
+html {
+    font-size: 16px;
+}
+
+.child {
+    font-size: 2rem; /* 2 × 16px = 32px */
+}
+```
+  
+📌 `rem` vs `em`:  
+- `rem` সবসময় `html`-এর উপর নির্ভরশীল।  
+- `em` তার parent element-এর উপর নির্ভরশীল।
+
+---
+3️⃣ `vh` (Viewport Height)
+🔹 Viewport মানে পুরো স্ক্রিনের দৃশ্যমান অংশ।  
+🔹 ১ `vh` = viewport height-এর ১%।  
+
+🔹 Example:  
+```css
+.box {
+    height: 50vh; /* স্ক্রিনের ৫০% উচ্চতা */
+}
+```
+  
+---
+
+ 4️⃣ `vw` (Viewport Width)  
+🔹 ১ `vw` = viewport width-এর ১%।  
+🔹 Responsive design-এর জন্য উপকারী।  
+
+🔹Example:
+```css
+.box {
+    width: 80vw; /* স্ক্রিনের ৮০% প্রস্থ */
+}
+```
+
+---
+
+## 📌 **সংক্ষেপে পার্থক্য**  
+| Unit  | নির্ভরতা           | Example (base font 16px হলে) |
+|------ |---------         |-----------------------------|
+| `em`  | Parent font-size | 2em = ২×parent font-size |
+| `rem` | Root (`html`) font-size | 2rem = ২×16px = 32px |
+| `vh`  | Viewport height | 50vh = স্ক্রিনের ৫০% উঁচু |
+| `vw`  | Viewport width | 80vw = স্ক্রিনের ৮০% চওড়া |
+
+📌 Use Case*:  
+✅ `rem` → Consistent typography  
+✅ `em` → Nested elements  
+✅ `vh/vw` → Full-screen sections, responsive design  
