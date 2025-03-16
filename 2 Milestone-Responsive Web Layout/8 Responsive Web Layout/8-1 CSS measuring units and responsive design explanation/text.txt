@@ -73,3 +73,6 @@ html {
 ✅ `rem` → Consistent typography  
 ✅ `em` → Nested elements  
 ✅ `vh/vw` → Full-screen sections, responsive design  
+
+
+learn vmax and vmin
