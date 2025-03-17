@@ -9,3 +9,28 @@
     padding: 5px;
     border-radius: 5px;
 }
+
+/* এই কোডটি CSS Grid Layout ব্যবহার করে একটি ওয়েবপেজের লেআউট নির্ধারণ করছে। এখানে grid-area প্রোপার্টি ব্যবহার করা হয়েছে, যা প্রতিটি এলিমেন্টকে গ্রিডের নির্দিষ্ট জায়গায় রাখে। */
+.header {
+    grid-area: header;
+}
+
+.nav {
+    grid-area: nav;
+}
+
+.main {
+    grid-area: main;
+}
+
+.sidebar {
+    grid-area: sidebar;
+}
+
+.advertise {
+    grid-area: advertise;
+}
+
+.footer {
+    grid-area: footer;
+}
