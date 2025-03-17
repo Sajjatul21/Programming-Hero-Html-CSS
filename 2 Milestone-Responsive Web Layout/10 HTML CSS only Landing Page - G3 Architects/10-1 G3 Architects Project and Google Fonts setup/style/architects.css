@@ -32,8 +32,15 @@
 /* header styles */
 
 /* navbar related styles */
+
+.brand {
+    font-size: 3rem;
+    font-weight: 700;
+}
+
 .navbar {
     justify-content: space-between;
+    align-items: center;
 }
 
 .nav-item {
