@@ -97,15 +97,6 @@ main>section {
     width: 100%;
 }
 
-/* Responsive media query */
-@media screen and (max-width:576px) {
-
-    .navbar,
-    .nav-links {
-        flex-direction: column;
-    }
-}
-
 /* team and feature related style */
 
 .teams {
@@ -130,4 +121,22 @@ main>section {
 
 #quick-list {
     font-weight: 500;
+}
+
+
+
+
+
+
+
+
+/* Responsive media query */
+
+@media screen and (max-width:576px) {
+
+    .navbar,
+    .nav-links,
+    .teams {
+        flex-direction: column;
+    }
 }
