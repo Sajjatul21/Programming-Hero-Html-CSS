@@ -23,12 +23,16 @@
     color: #727272;
 }
 
+.bg-light {
+    background-color: rgba(255, 144, 14, 0.1);
+}
+
 
 
 /* header styles */
 
 /* navbar related styles */
-.navbar{
+.navbar {
     justify-content: space-between;
 }
 
@@ -39,4 +43,10 @@
 
 .nav-link {
     text-decoration: none;
+}
+
+.navbar,
+.banner {
+    max-width: 1440px;
+    margin: 0 auto;
 }
