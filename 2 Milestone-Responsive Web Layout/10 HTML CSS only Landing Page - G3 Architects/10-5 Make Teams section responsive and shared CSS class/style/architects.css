@@ -148,3 +148,14 @@ main>section {
         margin: 20px;
     }
 }
+
+/* responsive for medium size device  */
+@media screen and (min-width: 576px) and (max-width: 992px) {
+    .teams {
+        flex-direction: column;
+    }
+
+    .out-features {
+        margin: 50px auto;
+    }
+}
