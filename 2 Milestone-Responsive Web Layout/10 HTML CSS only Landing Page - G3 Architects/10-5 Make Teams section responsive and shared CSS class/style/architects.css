@@ -139,4 +139,12 @@ main>section {
     .teams {
         flex-direction: column;
     }
+
+    .team-image-container {
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .out-features {
+        margin: 20px;
+    }
 }
