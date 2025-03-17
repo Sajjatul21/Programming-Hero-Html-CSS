@@ -214,6 +214,10 @@ footer textarea {
         gap: 20px;
     }
 
+    .banner-content>.btn-primary {
+        margin-bottom: 20px;
+    }
+
     .banner {
         margin: 20px;
     }
