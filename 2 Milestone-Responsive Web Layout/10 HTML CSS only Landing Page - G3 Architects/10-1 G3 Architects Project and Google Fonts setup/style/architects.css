@@ -9,10 +9,10 @@
 }
 
 /* shared styles */
+.display-flex {
+    display: flex;
+}
 
 /* header styles */
 
 /* navbar related styles */
-.navbar {
-    display: flex;
-}
