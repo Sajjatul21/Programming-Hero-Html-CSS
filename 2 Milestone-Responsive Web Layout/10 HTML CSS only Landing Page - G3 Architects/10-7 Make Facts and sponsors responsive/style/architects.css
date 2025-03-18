@@ -194,6 +194,15 @@ main>section {
     text-align: center;
 }
 
+.sponsor-companies {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+}
+
+.sponsor-companies img {
+    filter: grayscale(100%);
+}
+
 /* responsive for medium size device  */
 @media screen and (min-width: 576px) and (max-width: 992px) {
     .teams {
