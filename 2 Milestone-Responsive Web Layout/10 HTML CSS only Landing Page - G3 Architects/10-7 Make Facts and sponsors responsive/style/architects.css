@@ -148,6 +148,10 @@ main>section {
     font-weight: 700;
 }
 
+.feature-architect img {
+    width: 100%;
+}
+
 .feature-cart {
     padding-inline: 30px;
     box-shadow: 0 4px 30px rgba(0, 0, 0, 0.06);
@@ -223,6 +227,7 @@ main>section {
 
     .navbar,
     .nav-links,
+    .features,
     .teams {
         flex-direction: column;
     }
@@ -249,6 +254,11 @@ main>section {
 
     .out-features {
         margin: 20px;
+    }
+
+    #experience-badge {
+        margin-top: 20px;
+        margin-left: 20px;
     }
 }
 
