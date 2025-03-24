@@ -10,6 +10,9 @@
             width: 200px;
             border: 2px solid springgreen;
             white-space: nowrap;
+            overflow: hidden;
+            /* text-overflow: clip; */
+            text-overflow: ellipsis;
         }
 
         .box {
@@ -30,7 +33,9 @@
 
 <body>
     <header>
-        <p class="ellipsis"> I am serious learner. I am investing at least 6-8 hours ever single day. No gap at all.</p>
+        <p class="ellipsis"
+            title="I am serious learner. I am investing at least 6-8 hours ever single day. No gap at all."> I am
+            serious learner. I am investing at least 6-8 hours ever single day. No gap at all.</p>
     </header>
     <section>
         <div id="box-1" class="box">
